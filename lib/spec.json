@@ -2372,12 +2372,13 @@
                 "description": "Oauth 2.0 authentication",
                 "type": "oauth2",
                 "flows": {
-                    "implicit": {
+                    "authorizationCode": {
                         "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
                         "scopes": {
                             "https://www.googleapis.com/auth/cloud-identity.groups": "See, change, create, and delete any of the Cloud Identity Groups that you can access, including the members of each group",
                             "https://www.googleapis.com/auth/cloud-identity.groups.readonly": "See any Cloud Identity Groups that you can access, including group members and their emails"
-                        }
+                        },
+                        "tokenUrl": "https://www.googleapis.com/oauth2/v4/token"
                     }
                 }
             }
